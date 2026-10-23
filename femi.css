@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.big-box {
+    width: 600px;
+    height: 600px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: 150px 150px;
+    column-gap: 30px;
+    row-gap: 5px;
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .big-box{
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .big-box{
+        background-color: blue;
+    }
+}
+
+.red-box {
+    background-color: red;
+}
+.blue-box {
+    background-color: blue;
+}
+.green-box {
+    background-color: green;
+}
+.yellow-box {
+    background-color: yellow;
+}
+.brown-box {
+    background-color: brown;
+}
+.orange-box {
+    background-color: orange;
+}
